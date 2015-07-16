@@ -1,0 +1,40 @@
+<ion-view>
+	<ion-header-bar align-title="center" class="bar-assertive">
+	  <div class="buttons">
+	    <button nav-transition="ios" class="button back-button buttons button-icon ion-arrow-left-c header-item" ng-click="$ionicGoBack($event)"></button>
+	  </div>
+	  <h1 class="title">{{'buyFund.title' | translate}}</h1>
+	</ion-header-bar>
+   <ion-content class="assets life-insurance-order">
+    	<div class="list">
+    		<div class="item">
+    			<h2>{{'lifeInsOrder.cntTitle' | translate}}</h2>
+    		</div>
+    		<div class="list list-inset">
+			  <label class="item item-input">
+			    <input type="text" placeholder="{{'lifeInsOrder.name' | translate}}">
+			  </label>
+			  <label class="item item-input">
+			    <input type="text" placeholder="{{'lifeInsOrder.mobile' | translate}}">
+			  </label>
+			  <label class="item verify-code item-input">
+			    <input type="text" placeholder="{{'lifeInsOrder.verifyCode' | translate}}">
+			    <button class="button  button-assertive button-clear">
+				    {{'lifeInsOrder.getCode' | translate}}
+				 </button>
+			  </label>
+			</div>
+			
+	   </div>
+	   <div class="card">
+		  <div class="item assertive item-text-wrap">
+		    {{'lifeInsOrder.text' | translate}}
+		  </div>
+		</div>
+	   <div class="padding">
+	   <button class="button button-block button-positive">
+		  {{'lifeInsOrder.submit' | translate}}
+	   </button>
+	   </div>
+   </ion-content>
+ </ion-view> 

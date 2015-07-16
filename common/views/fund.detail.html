@@ -1,0 +1,89 @@
+<ion-view view-title="{{'fundDetail.title' | translate}}">
+	<ion-header-bar align-title="center" class="bar-assertive">
+	  <div class="buttons">
+	    <button nav-transition="ios" class="button back-button buttons button-icon ion-arrow-left-c header-item" ng-click="$ionicGoBack($event)"></button>
+	  </div>
+	  <h1 class="title">{{'fundDetail.title' | translate}}</h1>
+	  <div class="buttons">
+	     <button class="button" ng-click="showSharing()">{{'common.shareToWx' | translate}}</button>
+	  </div>
+	</ion-header-bar>
+	<ion-content  class="fund-detail">
+	   <div class="list" ng-init="getFundDetail()">
+	 		<div class="item item-divider">
+			    <h2>{{fundDetail.title}}</h2>
+			</div>
+			<div class="item fund-detail-ins">
+				<div class="row">
+					<div class="col col-25 value">{{fundDetail.fundCode}}</div>
+					<div class="col col-25 value">{{fundDetail.fundType}}</div>
+					<div class="col"></div>
+				</div>
+				<div class="row">
+					<div class="col col-25 ">{{'fundDetail.foundDate' | translate}}</div>
+					<div class="col col-25 value">{{fundDetail.foundDate | date : 'yyyy-MM-dd'}}</div>
+					<div class="col col-25">{{'fundDetail.buyRate' | translate}}</div>
+					<div class="col col-25 value">{{fundDetail.subscribeRate}}</div>
+				</div>
+				<div class="row">
+					<div class="col col-25">{{'fundDetail.latestValue' | translate}}</div>
+					<div class="col col-25 value">{{fundDetail.latestValue}}</div>
+					<div class="col col-25">{{'fundDetail.valueDate' | translate}}</div>
+					<div class="col col-25 value">{{fundDetail.valueDate | date : 'yyyy-MM-dd'}}</div>
+				</div>
+				<div class="row">
+					<div class="col col-25">{{'fundDetail.month1' | translate}}</div>
+					<div class="col col-25 value">{{fundDetail.month1Rate}}</div>
+					<div class="col col-25">{{'fundDetail.year1' | translate}}</div>
+					<div class="col col-25 value">{{fundDetail.year1Rate}}</div>
+				</div>
+				<div class="row">
+					<div class="col col-25">{{'fundDetail.month3' | translate}}</div>
+					<div class="col col-25 value">{{fundDetail.month3Rate}}</div>
+					<div class="col col-25">{{'fundDetail.toCurrent' | translate}}</div>
+					<div class="col col-25 value">{{fundDetail.toCurrent}}</div>
+				</div>
+			</div>
+	 		<div class="item">
+	 			<img class="month-chart" src="images/monthvalue.jpg">
+	 		</div>
+	 		<div class="item item-divider">
+			    <h2>{{'fundDetail.baseIntro' | translate}}</h2>
+			</div>
+			<div class="item item-text-wrap">
+	 			{{fundDetail.baseIntro}}
+	 		</div>
+	 		<div class="item item-divider">
+			    <h2>{{'fundDetail.fundRep' | translate}}</h2>
+			</div>
+			<div class="item item-text-wrap">
+	 			{{fundDetail.baseIntro}}
+	 		</div>
+	 		<div class="item item-divider">
+			    <h2>{{'fundDetail.fundMgrRep' | translate}}</h2>
+			</div>
+			<div class="item item-text-wrap">
+	 			{{fundDetail.baseIntro}}
+	 		</div>
+	 		<div class="item item-divider">
+			    <h2>{{'fundDetail.fundComp' | translate}}</h2>
+			</div>
+			<div class="item item-text-wrap">
+	 			{{fundDetail.baseIntro}}
+	 		</div>
+	 		<div class="item item-divider">
+			    <h2>{{'fundDetail.tradeInstr' | translate}}</h2>
+			</div>
+			<div class="item item-text-wrap">
+	 			{{fundDetail.baseIntro}}
+	 		</div>
+	 		<br/><br/><br/><br/>
+	   </div>
+	</ion-content>
+	
+	   <div class="bar fund-detail-footer bar-footer bar-energized">
+	   		<a href="#/buyFund" class="button button-block  button-clear">
+			  {{'fundDetail.applySubmit' | translate}}
+			</a>
+		</div>
+ </ion-view> 

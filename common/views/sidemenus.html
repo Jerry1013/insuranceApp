@@ -1,0 +1,47 @@
+<ion-side-menus>
+    <ion-pane ion-side-menu-content>
+          <ion-nav-bar  align-title="center" class="bar-assertive">
+          	<ion-nav-back-button class="button-icon ion-arrow-left-c">
+        	</ion-nav-back-button>	
+          	<ion-nav-buttons side="left">
+   					<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+			</ion-nav-buttons>	
+          </ion-nav-bar>
+      	 <ion-nav-view name="menu-content"></ion-nav-view>
+    </ion-pane> 
+    <ion-side-menu side="left" width="200">
+    	<header class="bar bar-header  bar-gradient">
+                <div class="title">{{'common.appName' | translate}}</div>
+        </header>
+      <ion-content scroll="false" class="has-header side-menu" >
+      	
+		<div class="list">
+			<a href="" ng-click="changeLanguage('zh_CN')" class="item item-icon-left item-icon-right">
+				<i class="icon ion-flag"></i>
+				{{'common.zh' | translate}}
+				<i class="icon right-arrow ion-ios-arrow-right"></i>
+			</a>
+			<a href="" ng-click="changeLanguage('zh_HK')" class="item item-icon-left item-icon-right">
+				<i class="icon ion-flag"></i>
+				{{'common.hk' | translate}}
+				<i class="icon  right-arrow ion-ios-arrow-right"></i>
+			</a>
+			<a href="#/menus/tabs/setting" class="item item-icon-left item-icon-right"  >
+				<i class="icon ion-person"></i>
+				{{'tabs.setting' | translate }}
+				<i class="icon right-arrow  ion-ios-arrow-right"></i>
+			</a>
+			<a href="#" ng-click="login()" class="item item-icon-left item-icon-right"  >
+				<i class="icon ion-log-in"></i>
+				{{'common.login' | translate}}
+				<i class="icon right-arrow  ion-ios-arrow-right"></i>
+			</a>
+			<a href="" ng-click="exitApp()" class="item item-icon-left item-icon-right" >
+				<i class="icon ion-power"></i>
+				{{'common.exitApp' | translate}}
+				<i class="icon  right-arrow ion-ios-arrow-right"></i>
+			</a>
+		</div>
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus>  

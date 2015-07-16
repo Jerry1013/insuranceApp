@@ -1,0 +1,38 @@
+<ion-view>
+	<ion-header-bar align-title="center" class="bar-assertive">
+	  <div class="buttons">
+	    <button nav-transition="ios" class="button back-button buttons button-icon ion-arrow-left-c header-item" ng-click="$ionicGoBack($event)"></button>
+	  </div>
+	  <h1 class="title invites-title">{{'myInvites.title' | translate}}</h1>
+	  <div class="buttons">
+	    <button class="button">{{'myInvites.awardRule' | translate}}</button>
+	  </div>
+	</ion-header-bar>
+   <ion-content class="assets my-orders">
+	    <ion-refresher
+	    pulling-text="{{'common.doRefresh'| translate}}"
+	    on-refresh="doRefresh()">
+	  </ion-refresher>
+	  <div class="list" ng-init="getInvites()">
+		<div class="item item-divider">
+		    	<div class="row">
+				  <div class="col col-50">{{'myInvites.total' | translate}}</div>
+				  <div class="col  col-50">1200.00{{'myInvites.unit' | translate}}</div>
+				</div>
+		  </div>
+		
+		  <a class="item" href="#" ng-repeat="invite in invites">
+		    	<div class="row">
+				  <div class="col col-25">{{invite.date}}</div>
+				  <div class="col  col-50">{{invite.content}}</div>
+				  <div class="col  col-25">{{invite.bonus}}{{'myInvites.unit' | translate}}</div>
+				</div>
+		  </a>
+		
+		</div>
+		<ion-infinite-scroll
+		    on-infinite="getInvites()"
+		    distance="1%">
+		 </ion-infinite-scroll>
+   </ion-content>
+ </ion-view> 

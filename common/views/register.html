@@ -1,0 +1,57 @@
+<ion-view view-title="{{'common.regTitle' | translate}}">
+  <ion-header-bar align-title="center" class="bar-assertive">
+  <div class="buttons">
+    <div class="buttons">
+	    <button nav-transition="ios" class="button back-button buttons button-icon ion-arrow-left-c header-item" ng-click="$ionicGoBack($event)"></button>
+	  </div>
+  </div>
+  <h1 class="title">{{'common.regTitle' | translate}}</h1>
+</ion-header-bar>
+   <ion-content class="padding has-header register">
+   <form name="regForm" novalidate="" ng-submit="register(regForm)">
+	     <div class="list card list-inset">
+	     <div class="item item-divider">
+			   {{'common.regTitle' | translate}}
+			  </div>
+		  <label class="item item-input" ng-class="{ 'has-error' : regForm.userName.$invalid&&regForm.$submitted}">
+		    <input type="text" ng-model="user.userName" required name="userName" placeholder="{{'register.phone_input' | translate}}">
+		  </label>
+		  <div class="item item-input-inset" ng-class="{ 'has-error' : regForm.verifyCode.$invalid&& regForm.$submitted}">
+		    <label class="item-input-wrapper">
+		      <input type="text" ng-model="user.verifyCode" required name="verifyCode"  placeholder="{{'register.verifyCode' | translate}}">
+		    </label>
+		    <button type="button"  class="button  button-assertive button-clear" ng-click="getVerfiyCode()">
+			    {{'lifeInsOrder.getCode' | translate}}
+			 </button>
+		  </div>
+		  <!-- <label class="item verify-code item-input" ng-class="{ 'has-error' : regForm.verifyCode.$invalid&& regForm.$submitted}">
+		    <input type="text" ng-model="user.verifyCode" required name="verifyCode" placeholder="{{'register.verifyCode' | translate}}">
+		    <button type="button"  class="button  button-assertive button-clear" ng-click="getVerfiyCode()">
+			    {{'lifeInsOrder.getCode' | translate}}
+			 </button>
+		  </label> -->
+		  <label class="item item-input" ng-class="{ 'has-error' : regForm.password.$invalid&&regForm.$submitted}">
+		    <input type="password" ng-model="user.password" required name="password" placeholder="{{'register.password_input' | translate}}">
+		  </label>
+		  <label class="item item-input" ng-class="{ 'has-error' :  regForm.inviteCode.$invalid&&regForm.$submitted}">
+		    <input type="text" ng-model="user.inviteCode" name="inviteCode" placeholder="{{'register.inviteCode' | translate}}">
+		  </label>
+		  <div class="item reg-instruction">
+			  	<div class="row">
+			  	  <div class="col">
+				  	<ion-checkbox ng-model="isChecked.checked" ng-checked="isChecked.checked"></ion-checkbox>
+				  </div>
+				  <div class="col   col-80">	
+					<a href="#/readRegInstruction">{{'register.regInstruction' | translate}}
+				  		<i class="icon ion-chevron-right"></i>
+				  	</a> 
+				  </div>
+				</div>
+		  </div>
+		</div>
+	     <button type="submit" ng-disabled="!isChecked.checked" class="button button-block button-energized">
+		  {{'common.registerBtn' | translate}}
+		</button>
+	</form>
+   </ion-content>
+ </ion-view> 

@@ -1,0 +1,21 @@
+<ion-view view-title="{{'mySearchRep.title' | translate}}">
+   <ion-content class="assets">
+	    <ion-refresher
+	    pulling-text="{{'common.doRefresh'| translate}}"
+	    on-refresh="doRefresh()">
+	  </ion-refresher>
+		 <div class="list" ng-init="loadMore()">
+
+		    <a class="item item-thumbnail-left"  ng-repeat="guide in guides"  href="#/mySearchRepDetail">
+		      <img src="{{guide.logoUrl}}">
+		      <h2>{{guide.title}}</h2>
+		      <p>{{guide.summary}}</p>
+		    </a>
+		
+		</div>
+		 <ion-infinite-scroll
+		    on-infinite="loadMore()"
+		    distance="1%">
+		 </ion-infinite-scroll>
+   </ion-content>
+ </ion-view> 

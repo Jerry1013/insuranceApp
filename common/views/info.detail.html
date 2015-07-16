@@ -1,0 +1,13 @@
+<ion-view>
+   	<ion-header-bar align-title="center" class="bar-assertive">
+	  <div class="buttons">
+	    <button nav-transition="ios" class="button back-button buttons button-icon ion-arrow-left-c header-item" ng-click="$ionicGoBack($event)"></button>
+	  </div>
+	  <h1 class="title">{{'infoDetail.title' | translate}}</h1>
+	</ion-header-bar>
+   <ion-content ng-init="infoDetail()" class="padding info-detail" scroll="false">
+		<h2>{{infoDetail.title}}</h2>
+		<div class="date"><span>{{infoDetail.date | date : 'yyyy-MM-dd'}}</span></div>
+		<div>{{infoDetail.content}}</div>
+   </ion-content>
+ </ion-view> 

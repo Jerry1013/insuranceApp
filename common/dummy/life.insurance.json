@@ -1,0 +1,39 @@
+[{
+	"insuranceType" : "China Life 中国人寿",
+	"insurances" : [{
+		"thumbnail" : "images/jnkl.png",
+		"name" : "China Life 退休储蓄65保险计划",
+		"desc" : "保险计划(「本计划」),专为准备退休及已退休人仕而设,贴心配合你在退休储蓄、...或受保人受保年龄 (10) 达25 岁"
+	},{
+		"name" : "China Life 退休储蓄65保险计划",
+		"thumbnail" : "images/jnkl.png",
+		"desc" : "保险计划(「本计划」),专为准备退休及已退休人仕而设,贴心配合你在退休储蓄、...或受保人受保年龄 (10) 达25 岁"
+	},{
+		"name" : "China Life 退休储蓄65保险计划",
+		"thumbnail" : "images/jnkl.png",
+		"desc" : "保险计划(「本计划」),专为准备退休及已退休人仕而设,贴心配合你在退休储蓄、...或受保人受保年龄 (10) 达25 岁"
+	},{
+		"name" : "China Life 退休储蓄65保险计划",
+		"thumbnail" : "images/jnkl.png",
+		"desc" : "保险计划(「本计划」),专为准备退休及已退休人仕而设,贴心配合你在退休储蓄、...或受保人受保年龄 (10) 达25 岁"
+	}]
+},{
+	"insuranceType" : "AVIVA 英杰华人寿",
+	"insurances" : [{
+		"name" : "AVIVA英杰华人寿",
+		"thumbnail" : "images/jtyw.png",
+		"desc" : "保险计划(「本计划」),专为准备退休及已退休人仕而设,贴心配合你在退休储蓄、...或受保人受保年龄 (10) 达25 岁"
+	},{
+		"name" : "AVIVA英杰华人寿",
+		"thumbnail" : "images/jtyw.png",
+		"desc" : "保险计划(「本计划」),专为准备退休及已退休人仕而设,贴心配合你在退休储蓄、...或受保人受保年龄 (10) 达25 岁"
+	},{
+		"name" : "AVIVA英杰华人寿",
+		"thumbnail" : "images/jtyw.png",
+		"desc" : "保险计划(「本计划」),专为准备退休及已退休人仕而设,贴心配合你在退休储蓄、...或受保人受保年龄 (10) 达25 岁"
+	},{
+		"name" : "AVIVA英杰华人寿",
+		"thumbnail" : "images/jtyw.png",
+		"desc" : "保险计划(「本计划」),专为准备退休及已退休人仕而设,贴心配合你在退休储蓄、...或受保人受保年龄 (10) 达25 岁"
+	}]
+}]

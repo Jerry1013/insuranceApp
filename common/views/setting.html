@@ -1,0 +1,138 @@
+<ion-view view-title="{{'setting.title' | translate}}">
+   <ion-content class="padding setting">
+     	<div class="card" ng-init="getUserInfo()">
+		  <div class="item to-table item-text-wrap">
+		    	<div class="user-icon">
+		    		<img src="images/user.jpg">
+		    	</div> 
+		    	<div class="account"> 
+		    		<div>{{user.name}}</div>
+		    		<div>{{user.points}}&nbsp;{{'setting.points' | translate}}</div>
+		    		<div>{{user.validDate}}</div>
+		    	</div>
+		  </div>
+		</div>
+		
+		<div class="card">
+			<a href="#/myInfo" class="item" href="#">
+			    <div class="row  app-list">
+			      <div class="col col-10">
+			    	<i class="icon ion-ios-email-outline"></i>
+			      </div>
+			      <div class="col title  col-67">
+			  	   <span>{{'setting.myInfo' | translate}}</span>
+			  	 </div>
+	              <div class="col chevron">
+	                <span class="number-reminder">9</span>
+	              	<i class="icon ion-chevron-right"></i>
+	              </div>
+			  </div>
+		  </a>
+		</div>
+		
+		
+		<!-- <div class="card">
+			<a  class="item"  href="#/myOrders">
+			    <div class="row  app-list ">
+			      <div class="col col-10">
+			    	<i class="icon ion-android-menu"></i>
+			      </div>
+			      <div class="col title   col-67">
+			  	   <span>{{'setting.myOrders' | translate}}</span>
+			  	 </div>
+	              <div class="col chevron">
+	              	<i class="icon ion-chevron-right"></i>
+	              </div>
+			  </div>
+		  </a>
+		</div> -->
+		
+		<!-- <div class="card">
+		<a  class="item"  href="#/myAppments">
+		    <div class="row app-list ">
+		      <div class="col col-10">
+		    	<i class="icon ion-android-time"></i>
+		      </div>
+		      <div class="col title    col-67">
+		  	   <span>{{'setting.myAppment' | translate}}</span>
+		  	 </div>
+              <div class="col chevron">
+              	<i class="icon ion-chevron-right"></i>
+              </div>
+		  	  
+		  </div>
+		  </a>
+		</div>   -->
+		<div class="card">
+		<a  class="item"  href="#/myInvites">
+		    <div class="row app-list ">
+		     <div class="col col-10">
+		    	<i class="icon ion-ios-people-outline"></i>
+		      </div>
+		      <div class="col  title   col-67">
+		  	   <span>{{'setting.myInvite' | translate}}</span>
+		  	 </div>
+              <div class="col chevron">
+              	  <i class="icon ion-chevron-right"></i>
+              </div>
+		  	  
+		  </div>
+		  </a>
+		</div>
+		
+	 <!-- 
+		<div class="card">
+			<a href="#/mySearchRep" class="item" href="#">
+			    <div class="row  app-list">
+			      <div class="col col-10">
+			    	<i class="icon ion-document"></i>
+			      </div>
+			      <div class="col  title   col-67">
+			  	   <span>{{'setting.searchRep' | translate}}</span>
+			  	 </div>
+	              <div class="col chevron">
+	             	 <span class="number-reminder">6</span>
+	              	<i class="icon ion-chevron-right"></i>
+	              </div>
+			  </div>
+			  </a>
+		</div>
+		 -->
+		<div class="card">
+		<a href="#/myApplySettings"  class="item"  href="#">
+		    <div class="row app-list ">
+		   	   <div class="col col-10">
+		         <i class="icon ion-ios-gear-outline"></i>
+		      </div>
+		      <div class="col  title   col-67">
+		  	   <span>{{'setting.appSetting' | translate}}</span>
+		  	 </div>
+              <div class="col chevron">
+                  <span class="number-reminder new-update">new</span>
+              	  <i class="icon ion-chevron-right"></i>
+              </div>
+		  	  
+		  </div>
+		  </a>
+		</div>
+		
+		<div class="card">
+		<a   class="item" href="tel:075533376927">
+		    <div class="row  app-list telephone">
+		      <div class="col col-10">
+		      <i class="icon ion-ios-telephone-outline"></i>
+		      </div>
+		      <div class="col title  col-30">
+		  	   <span>{{'setting.contact' | translate}}</span>
+		  	 </div>
+              <div class="col number">
+              	  075533376927
+              </div>
+		  	  
+		  </div>
+		  </a>
+		</div>
+		
+
+   </ion-content>
+ </ion-view> 

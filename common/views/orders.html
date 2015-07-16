@@ -1,0 +1,35 @@
+<ion-view>
+	<ion-header-bar align-title="center" class="bar-assertive">
+	  <div class="buttons">
+	    <button nav-transition="ios" class="button back-button buttons button-icon ion-arrow-left-c header-item" ng-click="$ionicGoBack($event)"></button>
+	  </div>
+	  <h1 class="title">{{'orders.title' | translate}}</h1>
+	</ion-header-bar>
+   <ion-content class="assets my-orders">
+	    <ion-refresher
+	    pulling-text="{{'common.doRefresh'| translate}}"
+	    on-refresh="getOrders()">
+	  </ion-refresher>
+	  <div class="list" ng-init="getOrders()">
+
+		  <div class="item item-divider">
+		    	<div class="row">
+				  <div class="col col-33">{{'orders.orderCode' | translate}}</div>
+				  <div class="col  col-20">{{'orders.person' | translate}}</div>
+				  <div class="col  col-33">{{'orders.planName' | translate}}</div>
+				  <div class="col ">{{'orders.applyStatus' | translate}}</div>
+				</div>
+		  </div>
+		
+		  <a class="item" href="#" ng-repeat="order in orders">
+		    	<div class="row">
+				  <div class="col col-33">{{order.orderCode}}</div>
+				  <div class="col  col-20">{{order.person}}</div>
+				  <div class="col  col-33">{{order.planName}}</div>
+				  <div class="col">{{order.applyStatus}}</div>
+				</div>
+		  </a>
+		
+		</div>
+   </ion-content>
+ </ion-view> 

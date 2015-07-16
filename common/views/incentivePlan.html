@@ -1,0 +1,45 @@
+<head>
+	<meta charset="utf-8">
+</head>
+<ion-view view-title="{{'incentivePlan.title' | translate}}">
+	<ion-nav-buttons side="right">
+      <button class="button" ng-click="showSharing()">
+        {{'common.shareToWx' | translate}}
+      </button>
+   </ion-nav-buttons>
+	<ion-content class="incentive_plan">
+		<img class="main"  src="images/invite_friends.png">
+		<div class="main-detail">
+			<h2 class="main-title">积分奖励方案</h2>
+			<p>
+				<span class="policy">总则：</span>
+				成功交易成为会员后，分享邀请好友成功交易获得相应奖励。
+奖励积分将出现在个人账户“电子钱包“中，可累计、转让（好友间互转）、续费（按相应比例兑换货币，续交下一年的服务费）、提现（按相应比例兑换货币，提现到绑定的银行卡中，提现手续费10%）、礼品兑换（现无兑换方案，可按需后期实现）。
+				
+			</p>
+			<h2>2400HKD/年    1HKD=10积分</h2>
+			<!-- <img class="main" src="images/policy_detail.png"> -->
+			<p>分级文字说明：如果你有<span class="focused-font">20</span>个微友</p>
+			<p><span class="fenxiao_level">一级分销：</span>您分享成功交易20人，等于您有20个一级分销，您将获得：
+20人*<span class="red-font">600HKD/人</span>=12000HKD <span class="focused-font">一万二，您的！</span>
+			</p>
+			<br/>
+			<p><span class="fenxiao_level">二级分销：</span>您的20个一级分销每人分享成功交易20人，等于您有400个二级分销，您将获得:400人*<span class="red-font">400HKD/人</span>=160000HKD  <span class="focused-font">十六万，您的！</span></p>
+			<br/>
+			<p><span class="fenxiao_level">三级分销：</span>您的400个二级分销每人分享成功交易20人，成为您的8000个三级分销，您将获得：8000人*<span class="red-font">200HKD/人</span>=1600000HKD
+<span class="focused-font">一百六十万，还是您的！</span>
+			</p>
+			<br/>
+			<p><span class="fenxiao_level">四级分销：</span>您的8000个三级分销每人分享成功交易20人，成为您的160000个四级分销，您将获得：160000人*<span class="red-font">100HKD/人</span>=16000000HKD
+			<span class="focused-font">一千六百万，都是您的！</span></p>
+			<br/><br/>
+			<p style="font-size:16px;font-weight:bold;">合计:12000+160000+1600000+16000000=约<span class="focused-font">1777万</span></p>
+			<p  style="font-size:16px;font-weight:bold;">没有得不到，就怕您不敢想，不敢做！</p>
+			<p  style="font-size:16px;font-weight:bold;">如果以上您都做到了，最后你将得到<span class="focused-font">1777万！</span></p>
+			<p  style="font-size:16px;font-weight:bold;">同样是做101服务，我们给您的不止多“1”点。一份投资，双份收益！</p>
+			<button ng-click="showSharing()" class="button button-block button-energized">
+			  	立即分享
+			</button>
+		</div>
+	</ion-content> 
+ </ion-view> 

@@ -1,0 +1,37 @@
+<ion-view>
+   
+   	 <ion-header-bar align-title="center" class="bar-assertive">
+	  <div class="buttons">
+	    <button nav-transition="ios" class="button back-button buttons button-icon ion-arrow-left-c header-item" ng-click="$ionicGoBack($event)"></button>
+	  </div>
+	  <h1 class="title">{{'linkedInsPay.title' | translate}}</h1>
+	</ion-header-bar>
+   	<ion-content class="linked-insurance-pay padding">
+		<div class="card">
+			<div class="item bar  bar-positive pay-title">
+				<i class="icon ion-social-yen"></i>
+				{{'linkedInsPay.package1' | translate}}
+			</div>
+		
+		</div>
+		
+		<div class="card list pay-way">
+		  <div class="item item-divider bar  bar-energized">
+		     {{'linkedInsPay.payWays' | translate}}
+		  </div>
+		   <ion-radio ng-model="choice" ng-value="'A'">
+		     <img src="images/pay1.jpg">
+		   	 {{'linkedInsPay.pay1' | translate}}
+		   	 <div class="pay-reminder">{{'linkedInsPay.reminder' | translate}}</div>
+		   </ion-radio>
+		   <ion-radio ng-model="choice" ng-value="'B'">
+		      <img src="images/pay2.jpg">
+		   	  {{'linkedInsPay.pay2' | translate}}
+		   </ion-radio>
+		</div>
+		
+		<a href="" class="button button-block button-energized">
+			  {{'linkedInsPay.payTitle' | translate}}
+			</a>
+   </ion-content>
+ </ion-view> 

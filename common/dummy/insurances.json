@@ -1,0 +1,21 @@
+[{
+	"title" : "境内快乐游保障",
+	"thumbnail" : "images/jnkl.png",
+	"contents" : "户外运动,自驾出游 ,医疗保障"
+},{
+	"title" : "境外安心游保障",
+	"thumbnail" : "images/jtyw.png",
+	"contents" : "海外留学,商务出行 ,旅游观光"
+},{
+	"title" : "综合意外保障",
+	"thumbnail" : "images/jwkl.png",
+	"contents" : "低价格,医疗保障,综合保险"
+},{
+	"title" : "交通意外保障",
+	"thumbnail" : "images/zhyw.png",
+	"contents" : "航班延误,安心乘驾,保障全面"
+},{
+	"title" : "热销产品",
+	"thumbnail" : "images/rxcp.png",
+	"contents" : "今日最优惠,本月热销排行"
+}]

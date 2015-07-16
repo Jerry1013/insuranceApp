@@ -1,0 +1,45 @@
+<ion-view ng-init="getDetail()">
+     <ion-header-bar align-title="center" class="bar-assertive">
+	  <div class="buttons">
+	    <button nav-transition="ios" class="button back-button buttons button-icon ion-arrow-left-c header-item" ng-click="$ionicGoBack($event)"></button>
+	  </div>
+	  <h1 class="title">{{'linkedInsDetail.title' | translate}}</h1>
+	</ion-header-bar>
+     <ion-content class="linked-insurance-detail">
+		<div class="list title">
+		    <a class="item item-thumbnail-left" href="#">
+		      <img src="{{detail.logo}}">
+		      <h2>{{detail.name}}</h2>
+		      <p>{{detail.summary}}</p>
+		    </a>
+	   </div>
+		
+		<div class="list card">
+		
+		  <div class="item item-text-wrap" href="#">
+		    <!-- <div class="personal-title">{{'linkedInsDetail.personalSubTitle' | translate}}</div> --> 
+		     <div>
+		        <span ng-bind-html="detail.content"></span>
+		     </div>
+		     <br/><br/>
+		    
+		     <h2 class="ins-detail-subtitlea">{{'linkedInsDetail.subTitlea' | translate}}</h2>
+		     <ul class="benifit service">
+		        <li ng-repeat="service in detail.services"><i class="icon ion-checkmark-round"></i>{{service}}</li>
+		     </ul>
+		     <ion-radio ng-model="choice" ng-value="'A'">
+		     <span class="package">
+		     {{'linkedInsDetail.package1' | translate}}</span>
+		     </ion-radio>
+		     <ion-radio ng-model="choice" ng-value="'B'">
+		      <span  class="package">
+		        
+		     {{'linkedInsDetail.package2' | translate}}</span></ion-radio>
+		     <a href="#/payLinkedIns" class="button button-block button-assertive">
+			  {{'linkedInsDetail.buyBtn' | translate}}
+			</a>
+		  </div>
+		
+		</div>
+   </ion-content>
+ </ion-view> 

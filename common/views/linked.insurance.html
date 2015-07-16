@@ -1,0 +1,83 @@
+<ion-view view-title="{{'linkedIns.title' | translate}}">
+   <ion-content ng-init="getAdvertImgs();" class="assets linked-insurance" scroll="false">
+     <ion-slide-box delegate-handle="image-viewer"  show-pager="true" does-continue="true" 
+	     auto-play="true" class="carousel" active-slide="myActiveSlide">
+			  <ion-slide ng-repeat="image in advertImgs">
+			    	<img src="{{image.imageUrl}}">
+			  </ion-slide>
+		</ion-slide-box>
+		<div class="main-content">
+		<div class="row">    
+		  <div class="col col-67">
+		  	  <a nav-transition="android" class="item" href="#/linkedInsDetail/1000100">
+		  	    <div class="insurance-one">
+		  	  	   <i class="icon ion-ios-cart-outline"></i>
+		  	  	   <span class="title">{{'linkedIns.insTwo' | translate}}</span>
+		  	    </div>
+		  	  </a>
+		  </div>
+		  <div class="col">
+		  	   <a class="item" href="#/linkedInsDetail/1000101">
+		  	     <div class="insurance-two">
+		  	   		<i class="icon ion-ios-star-outline"></i>
+		  	   		<div class="title">{{'linkedIns.insOne' | translate}}</div>
+		  	     </div>
+		  	   </a>
+		  </div>
+		</div>
+		<!--  
+		<div class="row">   
+		  <div class="col col-50">
+		  	  <a class="item" href="#/linkedInsDetail"><div class="insurance-three">
+		  	  	<i class="icon ion-ios-location-outline"></i>
+		  	  	<span class="title">{{'linkedIns.insOne' | translate}}</span>
+		  	  </div></a>
+		  </div>
+		  <div class="col col-25">
+		  	  <a class="item" href="#/linkedInsDetail"><div class="insurance-four">
+		  	  	<i class="icon ion-social-usd-outline"></i>
+		  	  	<div class="title">{{'linkedIns.insOne' | translate}}</div>
+		  	  </div></a>
+		  </div>
+		  <div class="col">
+		  	   <a class="item" href="#/linkedInsDetail"><div class="insurance-five">
+		  	   	 <i class="icon ion-social-buffer-outline"></i>
+		  	  	<div class="title">{{'linkedIns.insOne' | translate}}</div>
+		  	   </div></a>
+		  </div>
+		</div>
+		-->
+		<div class="row">   
+		  <div class="col col-50">
+		  	  <a class="item" href="#/linkedInsDetail/1000102"><div class="insurance-six">
+		  	   <i class="icon ion-social-rss-outline"></i>
+		  	  	<span class="title">{{'linkedIns.insThree' | translate}}</span></div></a>
+		  </div>
+		  <div class="col col-50">
+		  	  <a class="item" href="#/linkedInsDetail/1000103"><div class="insurance-seven">
+		  	   <i class="icon ion-social-snapchat-outline"></i>
+		  	   <span class="title">{{'linkedIns.insFour' | translate}}</span></div></a>
+		  </div>
+		</div>
+		<!-- 
+		<div class="row">   
+		  <div class="col col-33">
+		  	  <a class="item" href="#/linkedInsDetail"><div class="insurance-eight">
+		  	  <i class="icon ion-social-android-outline"></i>
+		  	  	<div class="title">{{'linkedIns.insOne' | translate}}</div></div></a>
+		  </div>
+		  <div class="col col-33">
+		  	  <a class="item" href="#/linkedInsDetail"><div class="insurance-night">
+		  	  <i class="icon ion-social-android-outline"></i>
+		  	  	<div class="title">{{'linkedIns.insOne' | translate}}</div></div></a>
+		  </div>
+		  <div class="col col-33">
+		  	  <a class="item" href="#/linkedInsDetail"><div class="insurance-ten">
+		  	  <i class="icon ion-social-android-outline"></i>
+		  	  	<div class="title">{{'linkedIns.insOne' | translate}}</div></div></a>
+		  </div>
+		</div>
+		 -->
+		 </div>
+   </ion-content>
+ </ion-view> 

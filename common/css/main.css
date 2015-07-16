@@ -1,0 +1,761 @@
+body{
+	position :static;
+}
+
+/**login**/
+.back-home{
+	font-size : 25px;
+	color : #fff;
+}
+
+.custom-align-center h1{
+	left : 80px!important;
+	right : 80px!important;
+}
+
+.login i{
+	font-size : 24px;
+	margin-right : 8px;
+}
+
+.login-bg{
+	background : url("../images/login_bg.jpg") no-repeat;
+	background-size : cover;
+}
+
+.logo{
+	display : inline-block;
+	text-align :center;
+	width : 100%;
+	padding : 30px 0;
+}
+
+
+.side-menus .side-logo{
+	width : 100%;
+}
+
+.side-menus .side-buttons .item:first-child{
+	border-top : 1px solid #eee;
+}
+
+.side-menus .side-buttons .item{
+	padding-top : 5px;
+	padding-bottom : 5px;
+	border : none;
+}
+
+.side-menu .icon.right-arrow{
+	font-size : 20px;
+	color : #666;
+}
+
+.guide_01{
+	background : url(../images/guide1.jpg) no-repeat;
+	background-size : cover;
+	height : 100%;
+	width : 100%;
+}
+
+.guide_02{
+	background : url(../images/guide2.jpg) no-repeat;
+	background-size : cover;
+	height : 100%;
+	width : 100%;
+}
+
+.guide_03{
+	background : url(../images/guide3.jpg) no-repeat;
+	background-size : cover;
+	height : 100%;
+	width : 100%;
+}
+
+.slider{
+	height : 100%;
+}
+
+.guide-enter{
+	bottom : 50px;
+	position : absolute;
+	text-align : center;
+}
+
+.guide .button-outline{
+	border: 2px solid #fff!important;
+	color: #fff!important;
+	font-weight: bold!important;
+}
+
+/**register**/
+.register .button.button-assertive.button-clear{
+	border-color: #e42012;
+	background-color: #ef473a;
+	color: #fff;
+}
+
+.register .verify-code{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 2px;
+}
+
+.reg-instruction{
+	padding : 0!important;
+}
+
+.reg-instruction .col-80{
+	line-height: 30px;
+}
+
+.register .item-checkbox{
+	padding-left : 0px!important;
+}
+
+/**common**/
+.asset-item-thumbnail h2{
+	font-size : 14px!important;
+	padding-bottom : 8px;
+}
+
+.asset-item-thumbnail p{
+	font-size : 13px!important;
+}
+
+.forgetPd{
+	float: right;
+	text-decoration: none;
+	color: #666;
+}
+
+/***info ***/ 
+
+.list-padding .title{
+	text-overflow : ellipsis;
+	overflow : hidden;
+	padding-right : 5px;
+	font-size : 15px;
+}
+ 
+a.list-padding{
+	padding-top : 10px;
+	padding-bottom : 10px;
+}
+
+.date-content{
+	color : #666;
+	font-size : 13px;
+	text-overflow : ellipsis;
+	overflow : hidden;
+} 
+
+.date-content .date{
+	margin-right : 5px;
+}
+/**carousel style**/
+.assets .carousel{
+	  height: 30%;
+}
+
+.assets .scroll{
+	height : 100%;
+}
+
+.assets .ion-record{
+	font-size : 10px;
+}
+
+.assets img{
+	width : 100%;
+	height : 100%;
+}
+
+.assets .slider-pager{
+	bottom : 10px;
+}
+
+
+/***fund**/  
+.fund-content .funds h2{
+	font-weight: bold;
+	margin-bottom: 5px!important;
+	font-size : 15px;
+}
+
+.fund-content .funds .rate-label{
+	font-size : 13px;
+	color : #666;
+	
+}
+
+.fund-properties{
+	display : table;
+	width : 100%;
+}
+
+.fund-rate{
+	display : table-cell;
+	width : 50%;
+	vertical-align: top;
+}
+
+.fund-rate div{
+	padding : 5px 0;
+}
+
+.fund-chart{
+	display : table-cell;
+	width : 50%;
+	vertical-align: top;
+}
+
+.fund-content .funds .rate{
+	color : #DC0000;
+	font-size : 12px;
+	font-weight: bold;
+}
+
+/****fund detail**/
+.fund-detail h2{
+	font-weight : bold!important;
+	font-size : 14px!important;
+}
+
+.fund-detail .month-chart{
+	width : 100%;
+}
+
+.fund-detail .list .item.fund-detail-ins{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color: antiquewhite;
+	font-size: 14px;
+	color: #666;
+}
+
+.fund-detail .list .item.fund-detail-ins  .value{
+	color : darkorange;
+}
+
+.fund-detail-footer{
+	padding-top : 0px!important;
+	display : inline-block!important;
+	text-align : center;
+}
+/**info detail**/
+
+.info-detail h2{
+	font-size : 20px;
+	font-weight : bold;
+	margin-bottom : 0px;
+}
+
+.info-detail img{
+	width : 100%;
+} 
+
+.info-detail canvas{
+	width : 100%;
+}
+
+.info-detail .date{
+	color : #666;
+	border-bottom : 1px dashed #ccc;
+	margin-bottom : 20px;
+}
+
+/**life insurance**/
+.life-insurance .item-divider{
+	display: table;
+	padding : 0;
+	width : 101%;
+	border : none!important;
+}
+
+.life-insurance .item-divider .colors{
+	height : 100%;
+	width : 2%;
+	display : table-cell;
+}
+
+.life-insurance  .item-divider .title{
+	display : table-cell;
+	width : 90%;
+	padding : 10px;
+}
+
+.life-insurance  .item-divider .showMore{
+	display : table-cell;
+	padding-right : 10px;
+	font-size : 13px;
+	color : #666;
+}
+
+.showMore a{
+	text-decoration: none;
+	color : #666;
+}
+
+.colors-red{
+	background-color : red;
+}
+
+.colors-blue{
+	background-color : blue;
+}
+
+/***setting**/
+.setting .card {
+	margin-top:0px;
+	margin-bottom : 10px;
+}
+.setting .to-table{
+	display :table;
+	width : 100%;
+	background-color : darkorange;
+	color : #fff;
+}
+
+.setting .to-table .user-icon{
+	display :table-cell;
+	width : 25%;
+}
+
+.setting .to-table .account{
+	display :table-cell;
+	vertical-align: top;
+}
+
+.setting .to-table .account div{
+	font-size : 14px;
+	padding-bottom : 5px;
+}
+
+.setting .to-table .user-icon img{
+	height : 20%;
+}
+
+.setting .card  .chevron{
+	text-align: right;
+	padding-top : 8px;
+}
+
+.setting .card .app-list  .chevron i{
+	font-size : 20px!important;
+}
+
+.setting .card a{
+	text-decoration: none;
+	color : #666;
+	padding : 0px!important;
+}
+
+.setting .card .app-list i{
+	font-size : 25px;
+	padding-right : 10px
+}
+
+.setting .card .title{
+	padding-top : 8px;
+	font-size : 14px;
+}
+
+.setting .telephone{
+	background-color : #ef473a;
+	font-size : 15px;
+	font-weight : bold;
+	color : #fff;
+}
+
+.setting .telephone .number{
+	padding-top : 10px;
+}
+
+.setting span.number-reminder{
+	display: inline-block;
+	margin-right: 4px;
+	width: 25px;
+	padding: 3px;
+	background-color: red;
+	height: 25px;
+	border-radius: 14px;
+	color: #fff;
+	text-align: center;
+}
+
+.setting div span.new-update{
+	border-radius: 6px;
+  width: 33px;
+  font-weight: bold;
+  font-size: 14px;
+  height: 20px;
+  line-height: 12px;
+}
+/****/
+.insurance-one , .insurance-two ,.insurance-three,.insurance-four,
+.insurance-five ,.insurance-six ,.insurance-seven ,.insurance-eight,
+.insurance-night,.insurance-ten{
+	border-radius : 2px;
+	color : #fff;
+	text-align : center;
+	padding-top : 5px;
+}
+
+.activated .insurance-one ,.activated  .insurance-two ,.activated .insurance-three,
+.activated .insurance-four,.activated .insurance-five ,.activated .insurance-six ,
+.activated .insurance-seven ,.activated .insurance-eight,
+.activated .insurance-night,.activated .insurance-ten{
+	background-color : #666;
+}
+.insurance-one , .insurance-two{
+	height : 150px;
+}
+
+.insurance-one{
+	background-color : #FF9900;
+}
+
+.insurance-one{
+	text-align: center;
+	line-height : 100px;
+	font-size : 60px;
+}
+
+.insurance-three{
+	text-align: center;
+	line-height : 80px;
+	font-size : 45px;
+}
+
+.insurance-two{
+	background-color : #0066CC;
+	text-align : center;
+	font-size : 45px;
+}
+
+.insurance-two .title{
+	white-space: normal;
+	padding-top : 10px;
+}
+
+.title{
+	font-size : 13px;
+}
+
+.insurance-three, .insurance-four, .insurance-five{
+	height : 80px;
+}
+
+.insurance-three{
+	background-color : #FFCC00;
+}
+
+.insurance-four , .insurance-five{
+	background-color : #336699;
+	font-size : 30px;
+	white-space: normal;
+}
+
+.insurance-six , .insurance-seven{
+	font-size : 45px;
+	white-space: normal;
+	line-height: 100px;
+}
+
+.insurance-five{
+	background-color : #336699;
+}
+
+.insurance-six, .insurance-seven{
+	height : 120px;
+}
+
+.insurance-six{
+	background-color : #CCCC33;
+}
+
+.insurance-seven{
+	background-color : #99CC66;
+}
+
+.insurance-eight, .insurance-night, .insurance-ten{
+	height : 80px;
+	font-size : 40px;
+	white-space: normal;
+}
+
+.insurance-eight{
+	background-color : #FFCC33;
+}
+
+.insurance-night{
+	background-color : #FFCC33;
+}
+
+.insurance-ten{
+	background-color : #FFCC33;
+}
+
+.linked-insurance .col{
+	padding : 2px;
+}
+
+.linked-insurance .col .item{
+	padding : 0px;
+}
+
+/**linked insurance detail*/
+.linked-insurance-detail .list.title{
+	margin-bottom: 0px;
+}
+
+.linked-insurance-detail .total-price{
+	float : right;
+}
+
+.linked-insurance-detail .demo p{
+	white-space: normal;
+}
+
+.linked-insurance-detail .list .item{
+	font-size : 14px;
+}
+
+.linked-insurance-detail .benifit{
+	margin-bottom : 10px;
+}
+
+.linked-insurance-detail .item-radio .item-content{
+	padding-left : 5px;
+}
+
+.linked-insurance-detail .package{
+	font-size : 12px;
+	color : red;
+	white-space: normal;
+}
+
+/***linked insurance pay**/
+.linked-insurance-pay .pay-way img{
+	width : 50px;
+	float : left;
+}
+
+.linked-insurance-pay .pay-way .pay-reminder{
+	font-size: 12px;
+	color: #ccc;
+	padding-left: 50px;
+}
+
+.linked-insurance-pay .pay-title{
+	text-align: center;
+	line-height: 0px;
+	font-weight: bold;
+}
+
+/**life insurance detail***/
+.order-txt{
+	font-size: 13px;
+	color: red;
+}
+
+.life-insurance-detail .item-text-wrap{
+	font-size : 12px;
+	color : #666;
+}
+.life-insurance-detail .item-divider i{
+	font-size : 23px;
+} 
+
+/**life insurance order*/
+.life-insurance-order .verify-code{
+	padding-top : 0px;
+	padding-bottom : 0px;
+}
+
+.life-insurance-order .button.button-assertive.button-clear{
+	border-color: #e42012;
+	background-color: #ef473a;
+	color: #fff;
+}
+
+.life-insurance-order .item h2{
+	font-size : 25px;
+}
+
+.life-insurance-order .item-text-wrap{
+	font-weight : bold;
+}
+
+/**my orders**/
+.my-orders .item-divider{
+	padding-left : 5px;
+	padding-top : 0px;
+	padding-bottom : 0px;
+}
+.my-orders .item-divider .col{
+	text-align: center;
+	font-weight : bold;
+	font-size : 12px;
+	color : #666;
+	border-right : 1px solid #ccc;
+}
+
+.my-orders .item-divider .col:last-child{
+	border-right : none;
+}
+
+.my-orders a.item{
+	padding-top : 0px;
+	padding-bottom : 0px;
+	padding-left : 0px;
+}
+
+.my-orders a .col{
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+}
+
+/***app settings**/
+.app-settings  .item {
+	padding-top : 5px;
+	padding-bottom : 5px;
+}
+
+.app-settings  .item  .left-icon {
+	font-size : 32px;
+}
+.app-settings .setting-text{
+	display: inline-block;
+	padding-top: 5px;
+	padding-left: 8px;
+	color: #666;
+	font-size: 14px;
+}
+
+.app-settings .setting-text.upgrade{
+	color : red;
+}
+
+.app-settings .ion-chevron-right{
+	float: right;
+	font-size: 20px;
+	color: #666;
+	padding-top: 8px;
+}
+
+/***invites***/
+.invites-title{
+	left : 0px!important;
+	right : 0px!important;
+}
+
+/**form validation***/
+label.item.has-error{
+	border-left : 3px solid red;
+}
+
+.side-menu ,.side-menu a ,.bar.bar-gradient{
+	background: rgb(179,190,173); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(179,190,173,1) 0%, rgba(223,229,215,1) 60%, rgba(252,255,244,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(179,190,173,1)), color-stop(60%,rgba(223,229,215,1)), color-stop(100%,rgba(252,255,244,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(179,190,173,1) 0%,rgba(223,229,215,1) 60%,rgba(252,255,244,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(179,190,173,1) 0%,rgba(223,229,215,1) 60%,rgba(252,255,244,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(179,190,173,1) 0%,rgba(223,229,215,1) 60%,rgba(252,255,244,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(179,190,173,1) 0%,rgba(223,229,215,1) 60%,rgba(252,255,244,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3bead', endColorstr='#fcfff4',GradientType=1 ); /* IE6-9 */
+	background-size : cover;
+}
+
+.side-menu a.item{
+	border-color : #fff;
+}
+
+.benifit li{
+	 word-wrap: normal;
+ 	 white-space: normal;
+ 	 padding-bottom : 5px;
+}
+
+img.chart{
+	width : 100%;
+	margin-bottom : 10px!important;
+}
+
+.item h2.ins-detail-subtitleq{
+  color: green;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+
+.item h2.ins-detail-subtitlea{
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+
+.benifit.service{
+	color : #FFA500;
+	
+}
+
+.benifit.service i{
+	padding-right : 5px;
+}
+
+/***incentive plan**/
+.incentive_plan  img.main{
+	width : 100%;
+}
+
+.incentive_plan .main-detail{
+	padding : 8px;
+}
+
+.incentive_plan h2{
+	color : red;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.incentive_plan .main-title{
+	text-align: center;
+}
+
+.incentive_plan .policy{
+	font-weight: bold;
+	color: #666;
+}
+
+.incentive_plan p{
+	font-size: 13px;
+	color: #666;
+}
+
+.incentive_plan .focused-font{
+	color: red;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.incentive_plan .fenxiao_level{
+	font-size: 15px;
+	color: #666;
+	font-weight: bold;
+}
+
+.incentive_plan .red-font{
+	color : red;
+}
+
+.linked-insurance .first-row{
+	margin-top : 30px;
+}
+
+.linked-insurance .main-content{
+	height : 100%;
+}
+

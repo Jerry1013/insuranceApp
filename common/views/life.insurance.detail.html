@@ -1,0 +1,52 @@
+<ion-view>
+	<ion-header-bar align-title="center" class="bar-assertive">
+	  <div class="buttons">
+	    <button nav-transition="ios" class="button back-button buttons button-icon ion-arrow-left-c header-item" ng-click="$ionicGoBack($event)"></button>
+	  </div>
+	  <h1 class="title">{{'lifeInsDetail.title' | translate}}</h1>
+	</ion-header-bar>
+   <ion-content class="assets life-insurance-detail">
+     <ion-slide-box show-pager="true" does-continue="true" 
+	     auto-play="true" class="carousel" active-slide="myActiveSlide">
+			  <ion-slide>
+			    	<img src="images/slide1.jpg">
+			  </ion-slide>
+			  <ion-slide>
+			    	<img src="images/slide2.jpg">
+			  </ion-slide>
+			  <ion-slide>
+			    	<img src="images/slide3.jpg">
+			  </ion-slide>
+		</ion-slide-box>
+		<div class="padding">
+			<div class="list card">
+	
+			  <div class="item item-divider bar  bar-positive">
+			  <i class="icon ion-ios-chatbubble-outline"></i>
+			    {{'lifeInsDetail.orderRange' | translate}}
+			  </div>
+			  <div class="item item-text-wrap">
+			    {{'lifeInsDetail.orderRangeTxt' | translate}}
+			  </div>
+			
+			</div>
+			
+			<div class="list card">
+	
+			  <div class="item item-divider bar  bar-balanced">
+			    <i class="icon ion-navicon-round"></i>
+			    {{'lifeInsDetail.orderInstion' | translate}}
+			  </div>
+			
+			  <div class="item item-text-wrap">
+			    {{'lifeInsDetail.orderRangeTxt' | translate}}
+			  </div>
+			
+			</div>
+			<a href="#/orderLifeIns" class="button button-block button-energized">
+			  {{'lifeInsDetail.buy' | translate}}
+			  <span class="order-txt">({{'lifeInsDetail.orderTxt' | translate}})</span>
+			</a>
+		</div>
+   </ion-content>
+ </ion-view> 

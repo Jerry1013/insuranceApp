@@ -1,0 +1,38 @@
+<ion-view view-title="{{'common.loginTitle' | translate}}">
+   <ion-header-bar align-title="center" class="bar-assertive custom-align-center">
+	  <div class="buttons">
+	    <a href="#/menus/tab/linkedIns" class="button button-icon icon  ion-ios-home">
+	    </a>
+	  </div>
+	  <h1 class="title">{{'common.loginTitle' | translate}}</h1>
+	  <div class="buttons">
+	    <a ng-click="gotoRegister()" class="button">{{'common.registerBtn' | translate}}</a>
+	  </div>
+	</ion-header-bar>
+   <ion-content scroll="false" class="padding">
+     <div class="logo">
+   		 <img src="images/logo.png">
+   	 </div>
+   	 <form novalidate="" name="loginForm" ng-submit="login(loginForm)">
+     <div class="list card list-inset login" ng-init="getUserInfo()">
+		  <div class="item item-divider">
+		   {{'common.loginTitle' | translate}}
+		  </div>
+		  <label class="item item-input" ng-class="{ 'has-error' : loginForm.userName.$invalid&&loginForm.$submitted}">
+		  	<i class="icon ion-person"></i>
+		    <input type="text" ng-model="userInfo.userName" name="userName" required placeholder="{{'common.userName' | translate}}">
+		  </label>
+		  <label class="item item-input"  ng-class="{ 'has-error' : loginForm.password.$invalid&&loginForm.$submitted}">
+		  	<i class="icon ion-locked"></i>
+		    <input type="password" ng-model="userInfo.password" name="password" required placeholder="{{'common.password' | translate}}">
+		  </label>
+		  <div class="item">
+		  	  <a class="forgetPd" href="#/forgetPassword" >{{'login.forgetPasswd' | translate}}</a>
+		  </div>
+	 </div>
+	   <button  class="button button-block button-energized">
+		  {{'common.login' | translate}}
+		</button>
+	</form>
+   </ion-content>
+ </ion-view> 

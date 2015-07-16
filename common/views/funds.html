@@ -1,0 +1,35 @@
+<ion-view view-title="{{'fund.title' | translate}}">
+	<ion-content  class="fund-content assets">
+	 	<ion-refresher
+		    pulling-text="{{'common.doRefresh'| translate}}"
+		    on-refresh="doRefresh()">
+		  </ion-refresher>
+	     <ion-slide-box show-pager="true" does-continue="true" 
+	     auto-play="true" class="carousel" active-slide="myActiveSlide">
+			  <ion-slide>
+			    	<img src="images/slide1.jpg">
+			  </ion-slide>
+			  <ion-slide>
+			    	<img src="images/slide2.jpg">
+			  </ion-slide>
+			  <ion-slide>
+			    	<img src="images/slide3.jpg">
+			  </ion-slide>
+		</ion-slide-box>
+		<div class="list" ng-init="loadMore()">
+			<a href="#/fundDetail" ng-repeat="fund in funds" class="item funds list-padding" href="#">
+				<div><h2>{{fund.title}}</h2></div>
+				<div class="fund-properties">
+					<div class="fund-rate">
+						<div><span class="rate-label">{{'fund.rate3Months' | translate}}</span><span class="rate">{{fund.months3Rate}}</span></div>
+						<div><span class="rate-label">{{'fund.rate1Year' | translate}}</span><span  class="rate">{{fund.year1Rate}}</span></div>
+						<div><span class="rate-label">{{'fund.rateSubscribe' | translate}}</span><span  class="rate">{{fund.subscribeRate}}</span></div>
+					</div>
+					<div class="fund-chart">
+						<img src="images/fundValue.png">
+					</div>
+				</div>
+			</a>
+		</div>
+		</ion-content>
+ </ion-view> 
